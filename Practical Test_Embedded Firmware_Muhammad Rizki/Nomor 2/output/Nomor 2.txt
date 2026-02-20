@@ -1,0 +1,201 @@
+â† [0;33m--- esp-idf-monitor 1.9.0 on \\.\COM3 115200â† [0m
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6384
+load:0x40078000,len:15916
+load:0x40080400,len:3920
+--- 0x40080400: _invalid_pc_placeholder at D:/Espressif/frameworks/esp-idf-v5.5.2/components/xtensa/xtensa_vectors.S:2235
+entry 0x40080644
+I (27) boot: ESP-IDF v5.5.2 2nd stage bootloader
+I (27) boot: compile time Feb 20 2026 07:41:54
+I (28) boot: Multicore bootloader
+I (29) boot: chip revision: v3.0
+I (32) boot.esp32: SPI Speed      : 40MHz
+I (35) boot.esp32: SPI Mode       : DIO
+I (39) boot.esp32: SPI Flash Size : 2MB
+I (42) boot: Enabling RNG early entropy source...
+I (47) boot: Partition Table:
+I (49) boot: ## Label            Usage          Type ST Offset   Length
+I (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (69) boot:  2 factory          factory app      00 00 00010000 00100000
+I (75) boot: End of partition table
+I (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09864h ( 39012) map
+I (100) esp_image: segment 1: paddr=0001988c vaddr=3ffb0000 size=023e0h (  9184) load
+I (103) esp_image: segment 2: paddr=0001bc74 vaddr=40080000 size=043a4h ( 17316) load
+I (110) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=0f120h ( 61728) map
+I (132) esp_image: segment 4: paddr=0002f148 vaddr=400843a4 size=08c18h ( 35864) load
+I (146) esp_image: segment 5: paddr=00037d68 vaddr=50000000 size=00020h (    32) load
+I (153) boot: Loaded app from partition at offset 0x10000
+I (153) boot: Disabling RNG early entropy source...
+I (164) cpu_start: Multicore app
+I (173) cpu_start: GPIO 3 and 1 are used as console UART I/O pins
+I (173) cpu_start: Pro cpu start user code
+I (173) cpu_start: cpu freq: 160000000 Hz
+I (175) app_init: Application information:
+I (179) app_init: Project name:     app-template
+I (183) app_init: App version:      1
+I (186) app_init: Compile time:     Feb 20 2026 07:43:39
+I (191) app_init: ELF file SHA256:  9bfb49878...
+--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 72a9fcb5c99a2b8d4b9878fe7c5a5c50794f88f9cd53627bba5098e5e557757d
+I (196) app_init: ESP-IDF:          v5.5.2
+I (199) efuse_init: Min chip rev:     v0.0
+I (203) efuse_init: Max chip rev:     v3.99 
+I (207) efuse_init: Chip rev:         v3.0
+I (211) heap_init: Initializing. RAM available for dynamic allocation:
+I (218) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+I (223) heap_init: At 3FFB2D00 len 0002D300 (180 KiB): DRAM
+I (228) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (233) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (239) heap_init: At 4008CFBC len 00013044 (76 KiB): IRAM
+W (245) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig
+I (257) spi_flash: detected chip: generic
+I (261) spi_flash: flash io: dio
+W (263) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+I (276) main_task: Started on CPU0
+I (286) main_task: Calling app_main()
+I (286) SCHEDULER: Sensor 1 first deadline 243 ms
+I (286) SCHEDULER: Sensor 2 first deadline 243 ms
+I (286) SCHEDULER: Sensor 3 first deadline 243 ms
+I (286) SCHEDULER: Sensor 4 first deadline 243 ms
+I (296) SCHEDULER: Sensor 5 first deadline 243 ms
+I (486) SCHEDULER: EXECUTE Sensor 1 at 243 ms
+I (486) SCHEDULER: Sensor 1 START READ
+I (486) main_task: Returned from app_main()
+I (526) SCHEDULER: Sensor 1 DONE READ
+I (526) SCHEDULER: Sensor 1 START SEND
+I (566) SCHEDULER: Sensor 1 DONE SEND
+I (566) SCHEDULER: Sensor 1 TOTAL TIME = 78 ms
+W (566) SCHEDULER: Sensor 2 MISSED DEADLINE by 78 ms
+I (566) SCHEDULER: EXECUTE Sensor 2 at 322 ms
+I (566) SCHEDULER: Sensor 2 START READ
+I (606) SCHEDULER: Sensor 2 DONE READ
+I (606) SCHEDULER: Sensor 2 START SEND
+I (646) SCHEDULER: Sensor 2 DONE SEND
+I (646) SCHEDULER: Sensor 2 TOTAL TIME = 74 ms
+W (646) SCHEDULER: Sensor 3 MISSED DEADLINE by 158 ms
+I (646) SCHEDULER: EXECUTE Sensor 3 at 402 ms
+I (646) SCHEDULER: Sensor 3 START READ
+I (686) SCHEDULER: Sensor 3 DONE READ
+I (686) SCHEDULER: Sensor 3 START SEND
+I (726) SCHEDULER: Sensor 3 DONE SEND
+I (726) SCHEDULER: Sensor 3 TOTAL TIME = 74 ms
+W (726) SCHEDULER: Sensor 4 MISSED DEADLINE by 238 ms
+I (726) SCHEDULER: EXECUTE Sensor 4 at 482 ms
+I (726) SCHEDULER: Sensor 4 START READ
+I (766) SCHEDULER: Sensor 4 DONE READ
+I (766) SCHEDULER: Sensor 4 START SEND
+I (806) SCHEDULER: Sensor 4 DONE SEND
+I (806) SCHEDULER: Sensor 4 TOTAL TIME = 74 ms
+W (806) SCHEDULER: Sensor 5 MISSED DEADLINE by 318 ms
+I (806) SCHEDULER: EXECUTE Sensor 5 at 562 ms
+I (806) SCHEDULER: Sensor 5 START READ
+I (846) SCHEDULER: Sensor 5 DONE READ
+I (846) SCHEDULER: Sensor 5 START SEND
+I (886) SCHEDULER: Sensor 5 DONE SEND
+I (886) SCHEDULER: Sensor 5 TOTAL TIME = 74 ms
+W (886) SCHEDULER: Sensor 1 MISSED DEADLINE by 198 ms
+I (886) SCHEDULER: EXECUTE Sensor 1 at 642 ms
+I (886) SCHEDULER: Sensor 1 START READ
+I (926) SCHEDULER: Sensor 1 DONE READ
+I (926) SCHEDULER: Sensor 1 START SEND
+I (966) SCHEDULER: Sensor 1 DONE SEND
+I (966) SCHEDULER: Sensor 1 TOTAL TIME = 74 ms
+W (966) SCHEDULER: Sensor 2 MISSED DEADLINE by 278 ms
+I (966) SCHEDULER: EXECUTE Sensor 2 at 722 ms
+I (966) SCHEDULER: Sensor 2 START READ
+I (1006) SCHEDULER: Sensor 2 DONE READ
+I (1006) SCHEDULER: Sensor 2 START SEND
+I (1046) SCHEDULER: Sensor 2 DONE SEND
+I (1046) SCHEDULER: Sensor 2 TOTAL TIME = 74 ms
+W (1046) SCHEDULER: Sensor 3 MISSED DEADLINE by 358 ms
+I (1046) SCHEDULER: EXECUTE Sensor 3 at 802 ms
+I (1046) SCHEDULER: Sensor 3 START READ
+I (1086) SCHEDULER: Sensor 3 DONE READ
+I (1086) SCHEDULER: Sensor 3 START SEND
+I (1126) SCHEDULER: Sensor 3 DONE SEND
+I (1126) SCHEDULER: Sensor 3 TOTAL TIME = 74 ms
+W (1126) SCHEDULER: Sensor 4 MISSED DEADLINE by 438 ms
+I (1126) SCHEDULER: EXECUTE Sensor 4 at 882 ms
+I (1126) SCHEDULER: Sensor 4 START READ
+I (1166) SCHEDULER: Sensor 4 DONE READ
+I (1166) SCHEDULER: Sensor 4 START SEND
+I (1206) SCHEDULER: Sensor 4 DONE SEND
+I (1206) SCHEDULER: Sensor 4 TOTAL TIME = 74 ms
+W (1206) SCHEDULER: Sensor 5 MISSED DEADLINE by 518 ms
+I (1206) SCHEDULER: EXECUTE Sensor 5 at 962 ms
+I (1206) SCHEDULER: Sensor 5 START READ
+I (1246) SCHEDULER: Sensor 5 DONE READ
+I (1246) SCHEDULER: Sensor 5 START SEND
+I (1286) SCHEDULER: Sensor 5 DONE SEND
+I (1286) SCHEDULER: Sensor 5 TOTAL TIME = 74 ms
+W (1286) SCHEDULER: Sensor 1 MISSED DEADLINE by 398 ms
+I (1286) SCHEDULER: EXECUTE Sensor 1 at 1042 ms
+I (1286) SCHEDULER: Sensor 1 START READ
+I (1326) SCHEDULER: Sensor 1 DONE READ
+I (1326) SCHEDULER: Sensor 1 START SEND
+I (1366) SCHEDULER: Sensor 1 DONE SEND
+I (1366) SCHEDULER: Sensor 1 TOTAL TIME = 74 ms
+W (1366) SCHEDULER: Sensor 2 MISSED DEADLINE by 478 ms
+I (1366) SCHEDULER: EXECUTE Sensor 2 at 1122 ms
+I (1366) SCHEDULER: Sensor 2 START READ
+I (1406) SCHEDULER: Sensor 2 DONE READ
+I (1406) SCHEDULER: Sensor 2 START SEND
+I (1446) SCHEDULER: Sensor 2 DONE SEND
+I (1446) SCHEDULER: Sensor 2 TOTAL TIME = 74 ms
+W (1446) SCHEDULER: Sensor 3 MISSED DEADLINE by 558 ms
+I (1446) SCHEDULER: EXECUTE Sensor 3 at 1202 ms
+I (1446) SCHEDULER: Sensor 3 START READ
+I (1486) SCHEDULER: Sensor 3 DONE READ
+I (1486) SCHEDULER: Sensor 3 START SEND
+I (1526) SCHEDULER: Sensor 3 DONE SEND
+I (1526) SCHEDULER: Sensor 3 TOTAL TIME = 74 ms
+W (1526) SCHEDULER: Sensor 4 MISSED DEADLINE by 638 ms
+I (1526) SCHEDULER: EXECUTE Sensor 4 at 1282 ms
+I (1526) SCHEDULER: Sensor 4 START READ
+I (1566) SCHEDULER: Sensor 4 DONE READ
+I (1566) SCHEDULER: Sensor 4 START SEND
+I (1606) SCHEDULER: Sensor 4 DONE SEND
+I (1606) SCHEDULER: Sensor 4 TOTAL TIME = 74 ms
+W (1606) SCHEDULER: Sensor 5 MISSED DEADLINE by 718 ms
+I (1606) SCHEDULER: EXECUTE Sensor 5 at 1362 ms
+I (1606) SCHEDULER: Sensor 5 START READ
+I (1646) SCHEDULER: Sensor 5 DONE READ
+I (1646) SCHEDULER: Sensor 5 START SEND
+I (1686) SCHEDULER: Sensor 5 DONE SEND
+I (1686) SCHEDULER: Sensor 5 TOTAL TIME = 74 ms
+W (1686) SCHEDULER: Sensor 1 MISSED DEADLINE by 598 ms
+I (1686) SCHEDULER: EXECUTE Sensor 1 at 1442 ms
+I (1686) SCHEDULER: Sensor 1 START READ
+I (1726) SCHEDULER: Sensor 1 DONE READ
+I (1726) SCHEDULER: Sensor 1 START SEND
+I (1766) SCHEDULER: Sensor 1 DONE SEND
+I (1766) SCHEDULER: Sensor 1 TOTAL TIME = 74 ms
+W (1766) SCHEDULER: Sensor 2 MISSED DEADLINE by 678 ms
+I (1766) SCHEDULER: EXECUTE Sensor 2 at 1522 ms
+I (1766) SCHEDULER: Sensor 2 START READ
+I (1806) SCHEDULER: Sensor 2 DONE READ
+I (1806) SCHEDULER: Sensor 2 START SEND
+I (1846) SCHEDULER: Sensor 2 DONE SEND
+I (1846) SCHEDULER: Sensor 2 TOTAL TIME = 74 ms
+W (1846) SCHEDULER: Sensor 3 MISSED DEADLINE by 758 ms
+I (1846) SCHEDULER: EXECUTE Sensor 3 at 1602 ms
+I (1846) SCHEDULER: Sensor 3 START READ
+I (1886) SCHEDULER: Sensor 3 DONE READ
+I (1886) SCHEDULER: Sensor 3 START SEND
+I (1926) SCHEDULER: Sensor 3 DONE SEND
+I (1926) SCHEDULER: Sensor 3 TOTAL TIME = 74 ms
+W (1926) SCHEDULER: Sensor 4 MISSED DEADLINE by 838 ms
+I (1926) SCHEDULER: EXECUTE Sensor 4 at 1682 ms
+I (1926) SCHEDULER: Sensor 4 START READ
+I (1966) SCHEDULER: Sensor 4 DONE READ
+I (1966) SCHEDULER: Sensor 4 START SEND
+I (2006) SCHEDULER: Sensor 4 DONE SEND
+I (2006) SCHEDULER: Sensor 4 TOTAL TIME = 74 ms
+W (2006) SCHEDULER: Sensor 5 MISSED DEADLINE by 918 ms
+I (2006) SCHEDULER: EXECUTE Sensor 5 at 1762 ms
